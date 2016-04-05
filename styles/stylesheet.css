@@ -1,4 +1,14 @@
-#breathing-button {
+div{
+    width:50px;
+    height:50px;
+    margin: 50px auto;
+    margin-top: 300px;
+	background: #5885cb;
+	border-radius: 50px;
+	
+}
+
+.breathing-button {
     width:50px;
     height:50px;
     margin: 50px auto;

@@ -4,11 +4,20 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href ="styles/stylesheet.css"/>
 	</head>
+<body>
+		<div></div>
 
-		<div id="breathing-button">breathe.</div>
-
-	<body>
+	
+	<script src="scripts/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+	$(document).ready(function(){
+	
+		$("div").click(function(){
+		    $("div").toggleClass("breathing-button");
+		});
+		});
+		</script>
 	</body>
 
-	</html>
+</html>
 
