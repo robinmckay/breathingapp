@@ -5,16 +5,29 @@
 		<link rel="stylesheet" type="text/css" href ="styles/stylesheet.css"/>
 	</head>
 <body>
-		<div></div>
+		<div class="circle"></div>
 
 	
+	<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+	<script>
+	
+	
+	</script>
 	<script src="scripts/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 	$(document).ready(function(){
 	
 		$("div").click(function(){
 		    $("div").toggleClass("breathing-button");
+			SC.initialize({
+			  client_id: '361cff61f5052e2b88addfd0128e34c6'
+			});
+	
+			SC.stream('/tracks/298').then(function(player){
+				player.play();
+			});
 		});
+		
 		});
 		</script>
 	</body>
